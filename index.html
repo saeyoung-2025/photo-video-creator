@@ -11,7 +11,7 @@
     <meta name="author" content="PhotoVideo Studio" />
     
     <!-- PWA Manifest -->
-    <link rel="manifest" href="/manifest.json" />
+    <link rel="manifest" href="./manifest.json" />
     
     <!-- PWA Theme Colors -->
     <meta name="theme-color" content="#6366f1" />
@@ -26,30 +26,30 @@
     <meta name="application-name" content="PhotoVideo Studio" />
     
     <!-- App Icons -->
-    <link rel="icon" type="image/x-icon" href="/icons/icon-72x72.png" />
-    <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="/icons/icon-152x152.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/icons/icon-192x192.png" />
+    <link rel="icon" type="image/x-icon" href="./icons/icon-72x72.png" />
+    <link rel="apple-touch-icon" href="./icons/icon-192x192.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="./icons/icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./icons/icon-192x192.png" />
     
     <!-- Open Graph Meta Tags -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="PhotoVideo Studio" />
     <meta property="og:description" content="사진과 음악으로 멋진 동영상을 만들어보세요" />
-    <meta property="og:image" content="/icons/icon-512x512.png" />
-    <meta property="og:url" content="https://yourdomain.github.io/photovideo-studio" />
+    <meta property="og:image" content="https://saeyoung-2025.github.io/photo-video-creator/icons/icon-512x512.png" />
+    <meta property="og:url" content="https://saeyoung-2025.github.io/photo-video-creator" />
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="PhotoVideo Studio" />
     <meta name="twitter:description" content="사진과 음악으로 멋진 동영상을 만들어보세요" />
-    <meta name="twitter:image" content="/icons/icon-512x512.png" />
+    <meta name="twitter:image" content="https://saeyoung-2025.github.io/photo-video-creator/icons/icon-512x512.png" />
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/assets/index-IYwsl82A.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CQl0fbSq.css">
+    <script type="module" crossorigin src="./assets/index-IYwsl82A.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CQl0fbSq.css">
   </head>
   <body>
     <div id="root"></div>
@@ -58,7 +58,7 @@
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js')
+          navigator.serviceWorker.register('./sw.js')
             .then((registration) => {
               console.log('SW registered: ', registration);
             })
