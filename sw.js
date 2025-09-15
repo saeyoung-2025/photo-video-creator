@@ -1,9 +1,12 @@
 const CACHE_NAME = 'photovideo-studio-v1';
 const urlsToCache = [
-  '/',
-  '/src/main.tsx',
-  '/src/index.css',
-  '/manifest.json'
+  './',
+  './index.html',
+  './assets/index-IYwsl82A.js',
+  './assets/index-CQl0fbSq.css',
+  './manifest.json',
+  './icons/icon-192x192.png',
+  './icons/icon-512x512.png'
 ];
 
 // Install Service Worker
@@ -60,15 +63,15 @@ function doBackgroundSync() {
 self.addEventListener('push', (event) => {
   const options = {
     body: event.data ? event.data.text() : 'New update available!',
-    icon: '/icons/icon-192x192.png',
-    badge: '/icons/icon-72x72.png',
+    icon: './icons/icon-192x192.png',
+    badge: './icons/icon-72x72.png',
     vibrate: [100, 50, 100],
     data: {
       dateOfArrival: Date.now(),
       primaryKey: 1
     }
   };
-
+  
   event.waitUntil(
     self.registration.showNotification('PhotoVideo Studio', options)
   );
